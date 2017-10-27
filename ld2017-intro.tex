@@ -1,6 +1,7 @@
 \documentclass[10pt]{beamer}
 \usepackage[italian]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{wrapfig}
 
 \usetheme{metropolis}
 \usepackage{appendixnumberbeamer}
@@ -25,6 +26,8 @@
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{llg.png}}
 
 \begin{document}
+
+\setlength{\columnsep}{15pt}
 
 \setbeamertemplate{frame footer}{Latina Linux User Group - Linux Day 2017 - Intro}
 
@@ -114,7 +117,12 @@ Un software che rilascia pubblicamente anche il codice sorgente è detto \textbf
 
 \begin{frame}[fragile]{Il progetto GNU}
 
-\includegraphics[scale=0.5]{stallman}
+\begin{wrapfigure}{l}{0.2\textwidth}
+\centering
+\label{fig:stallman}
+\includegraphics[width=0.2\textwidth]{stallman}
+\end{wrapfigure}
+
 
 Nel 1984 nasce il progetto \textbf{GNU} ad opera di \textit{Richard Stallman}.
 
@@ -125,7 +133,12 @@ Il progetto \textit{GNU} aveva tante applicazioni, ma mancava di un kernel stabi
 \end{frame}
 
 \begin{frame}[fragile]{Il lavoro di Linus Torvalds}
-\includegraphics[scale=0.3]{linus}
+
+\begin{wrapfigure}{l}{0.3\textwidth}
+\centering
+\label{fig:linus}
+\includegraphics[width=0.3\textwidth]{linus}
+\end{wrapfigure}
 
 Nel 1991 Linus Torvalds, uno studente finlandese, scrisse un kernel simile a quello del \textit{Minix} (il sistema operativo che aveva a scuola).
 
@@ -137,12 +150,42 @@ La comunità iniziò ad unire il kernel \textit{Linux} e gli strumenti di \texti
 
 \section{GNU/Linux}
 
-\begin{frame}[fragile]{Definizioni}
-.
+\begin{frame}[fragile]{GNU/Linux}
+
+\textbf{GNU/Linux} è un sistema \textit{free and open source}, ovvero \textbf{libero e con sorgente aperto}.
+
+Tutti possono studiarlo, contribuire allo sviluppo, modificarlo, condividerlo.
+
 \end{frame}
 
 \begin{frame}[fragile]{GNU/Linux nella vita quotidiana}
-.
+
+\begin{itemize}
+\item 66\% dei server del mondo girano con Linux
+\item Virtualmente ogni router che avete in casa ha Linux dentro
+\item Linux gira sul 99.6\% dei primi 500 supercomputer
+\item circa il 70\% degli smartphones al mondo contiene Linux (Android)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Le distribuzioni}
+
+Poiché GNU/Linux non è gestito da una organizzazione centrale, ma è solo un insieme di tante applicazioni differenti, \textbf{non esiste un solo sistema GNU/Linux}.
+
+Esistono invece diverse \textbf{distribuzioni}, gestite da community che organizzano i programmi (ed il kernel) seguendo ognuno una filosofia diversa.
+
+\end{frame}
+
+\begin{frame}[fragile]{Le distribuzioni}
+
+\centering
+\includegraphics[width=0.3\textwidth]{red_hat}
+\includegraphics[width=0.15\textwidth]{debian}
+
+\includegraphics[width=0.3\textwidth]{slackware}
+\includegraphics[width=0.5\textwidth]{suse}
+
 \end{frame}
 
 \section{I Linux User Group}
